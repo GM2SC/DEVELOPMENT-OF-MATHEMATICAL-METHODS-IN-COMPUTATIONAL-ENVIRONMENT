@@ -1,0 +1,26 @@
+#Construção de matrizes
+import numpy as np
+
+print("Matriz de variáveis int")
+AInt = np.array([[4,6,9],[8,5,2]])
+print(AInt,"\n")
+
+print("Matriz de variáveis float")
+AFloat = np.array([[3.4,7.9,6.2],[7.7,2.2,4.4]])
+print(AFloat,"\n")
+
+print("Matriz de variáveis complex")
+AComplex = np.array([[4,6,9],[8,5,2]], dtype = complex)
+print(AComplex,"\n")
+
+print("Matriz nula")
+ANula = np.zeros( (4,5) )
+print(ANula,"\n")
+
+print("Matriz arange()")
+AArange = np.arange(4)
+print('AArange =', AArange,"\n")
+
+print("Matriz shape()")
+AShape = np.arange(12).reshape(2, 6)
+print('AShape =\n', AShape,"\n")
