@@ -2,10 +2,10 @@
 """
 Created on Sat Mar  9 18:48:13 2019
 
-@author: 
+@authors: 
         Denis C. L. Costa
         Heictor A. de Oliveira Costa
-        Wendell Castro
+        Wendel Castro
         João Neto
   
 Grupo de Pesquisa: 
