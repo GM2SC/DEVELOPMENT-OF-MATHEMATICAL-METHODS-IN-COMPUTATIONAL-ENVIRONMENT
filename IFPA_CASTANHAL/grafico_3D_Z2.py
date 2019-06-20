@@ -17,8 +17,9 @@ Tema:
        EM FUNÇÃO DA TAXA DE DETERIORAÇÃO DE PRODUTOS  
        
 Disponível em:
-    
-      
+    https://github.com/GM2SC/DEVELOPMENT-OF-MATHEMATICAL-METHODS-IN-
+    COMPUTATIONAL-ENVIRONMENT/blob/master/IFPA_CASTANHAL/grafico_3D_Z2.py
+        
 """
 # Bibliotecas Utilizadas no programa
 from mpl_toolkits.mplot3d import Axes3D
