@@ -18,7 +18,7 @@ Tema:
        
 Disponível em:
     https://github.com/GM2SC/DEVELOPMENT-OF-MATHEMATICAL-METHODS-IN-
-    COMPUTATIONAL-ENVIRONMENT/blob/master/IFPA_CASTANHAL/valor_medio_z1.py
+    COMPUTATIONAL-ENVIRONMENT/blob/master/IFPA_CASTANHAL/valor_medio_z2.py
     
 """
 
