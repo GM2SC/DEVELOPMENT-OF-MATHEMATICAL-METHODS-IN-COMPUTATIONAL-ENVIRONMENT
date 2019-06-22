@@ -19,7 +19,8 @@ Tema:
        EM FUNÇÃO DA TAXA DE DETERIORAÇÃO DE PRODUTOS  
        
 Disponível em:
-    
+    https://github.com/GM2SC/DEVELOPMENT-OF-MATHEMATICAL-METHODS-IN-
+    COMPUTATIONAL-ENVIRONMENT/blob/master/IFPA_CASTANHAL/valor_medio_z1.py
     
 """
 
