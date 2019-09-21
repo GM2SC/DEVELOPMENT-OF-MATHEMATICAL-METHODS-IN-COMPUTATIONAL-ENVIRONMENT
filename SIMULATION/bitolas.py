@@ -6,6 +6,9 @@ Professores:
     Denis C. L. Costa - Gm²SC (CNPq)
     Moacir Kuwahara
 Faculdade: Faci/Wyden
+Disponível em:
+    https://github.com/GM2SC/DEVELOPMENT-OF-MATHEMATICAL-METHODS-IN-
+    COMPUTATIONAL-ENVIRONMENT/blob/master/SIMULATION/bitolas.py
 """
 
 # Instalações Elétricas: Simulação de Projetos
