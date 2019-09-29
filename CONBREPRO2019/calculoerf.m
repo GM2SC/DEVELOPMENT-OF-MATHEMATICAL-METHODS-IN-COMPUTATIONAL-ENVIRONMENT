@@ -10,7 +10,7 @@ fprintf('\n              Campus Ananindeua')
 fprintf('\nwebsite: http://ananindeua.ifpa.edu.br')
 fprintf('\nDisponível em: https://github.com/GM2SC/DEVELOPMENT-OF-')
 fprintf('\nMATHEMATICAL-METHODS-IN-COMPUTATIONAL-ENVIRONMENT/blob/')
-fprintf('\nmaster/CONBREPRO2019/temperatura.m\n\n')
+fprintf('\nmaster/CONBREPRO2019/calculoerf.m\n\n')
 disp('===================================================================')
 %%
 fprintf('\n>>>>>>>>>>>>>>> PROGRAMA 02 - calculoerf <<<<<<<<<<<<<<<<\n\n')
