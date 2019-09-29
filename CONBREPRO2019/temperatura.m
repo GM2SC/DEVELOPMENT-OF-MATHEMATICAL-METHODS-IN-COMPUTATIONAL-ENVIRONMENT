@@ -13,7 +13,7 @@ fprintf('\nMATHEMATICAL-METHODS-IN-COMPUTATIONAL-ENVIRONMENT/blob/')
 fprintf('\nmaster/CONBREPRO2019/temperatura.m\n\n')
 disp('===================================================================')
 %%
-fprintf('\n>>>>>>>>>>>>>>>>> PROGRAMA 01 <<<<<<<<<<<<<<<<<<<\n\n')
+fprintf('\n>>>>>>>>>>>>>>> PROGRAMA 01 - Temperatura <<<<<<<<<<<<<<<<\n\n')
 disp('') 
 % Vetor Temperatura 
 temper = [-10.0000 0.0000 10.0000 20.0000 30.0000];
