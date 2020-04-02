@@ -20,8 +20,7 @@ Assunto:
        
 Disponível em:
     
-          https://github.com/DenisCosta/PYTHON_MATHEMATICAL-MODELING/blob/master/FOURIER/Fourier_01.py
-    
+   https://github.com/GM2SC/DEVELOPMENT-OF-MATHEMATICAL-METHODS-IN-COMPUTATIONAL-ENVIRONMENT/blob/master/SENGI_2020/Fourier_01.py
 """
 # Importando Bibliotecas
 # Biblioteca numpy: Matemática de alto Nível
