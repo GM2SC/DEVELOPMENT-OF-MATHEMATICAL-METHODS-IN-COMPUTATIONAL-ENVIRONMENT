@@ -3,13 +3,14 @@
 Created on Mon Mar  4 23:16:47 2019
 
 @authors Professors: 
-        Dr. Denis C. L. Costa
+        Dr. Denis Carlos Lima Costa
         MSc. Lair Aguiar de Meneses
         
 @authors Students:
-        Heictor A. de O. Costa
-        Brennus Caio
-        Júlio Azancort
+        Heictor Alves de Oliveira Costa
+        Lucas Pompeu Neves
+        Brennus Caio Carvalho da Cruz
+        Júlio Leite Azancort Neto
 
 Grupo de Pesquisa: 
                  Gradiente de Modelagem Matemática e
@@ -30,21 +31,22 @@ import numpy as np
 
 from numpy import *
 
+
 # Biblioteca matplot: Gráficos
 import matplotlib.pyplot as plt
 
 ##########################################################
 # Variáveis de Controle
 
-T0 = 0                       # Instante Inicial
+T0 = 0.0                   # Instante Inicial
 
-T1 = 5                       # Instante Final
+T1 = 10                       # Instante Final
 
 t = np.linspace(T0,T1,100)   # Intervalo de análise
 
 # Declarando a Função - Sinal
 def f(t):
-    return 2*t
+    return 10*t-t**2
 
 # Representação Algébrica do Sinal
 print('S(n) = a0/2 + F(n)')
@@ -54,45 +56,36 @@ print('')
 
 a0 = 10
 
-# def F1(t):
-#     return -10.0*sin(0.4*pi*t)/pi
-# def F2(t):
-#     return -5.0*sin(0.8*pi*t)/pi
-# def F3(t):
-#     return (-3.33333333333333*cos(6.0*pi)/pi + \
-#            0.555555555555556*sin(pi/1125899906842624)/pi**2)*sin(1.2*pi*t) +\
-#           (-0.555555555555556/pi**2 + 3.33333333333333*sin(pi/1125899906842624)/pi +\
-#            0.555555555555556*cos(6.0*pi)/pi**2)*cos(1.2*pi*t)
-# def F4(t):
-#     return -2.5*sin(1.6*pi*t)/pi
-# def F5(t):
-#     return -2.0*sin(2*pi*t)/pi
-# def Fn(t):
-#     return F1(t) + F2(t) + F3(t) + F4(t) + F5(t)
+# Função Ruído 
 
 limiteinferior = 0.0
-limitesuperior = 10**(-1)
+limitesuperior = 30*10**(-1)
 numeropontos = 100
  
 ruido = random.uniform(low=limiteinferior, high=limitesuperior, size=numeropontos)
        
-# def S(t):
-#     return a0/2 + Fn(t)
+# Função Sinal sem Rúido: S(t)
+# Função Sinal com Rúido: S(t) + ruido
 
-S =  -10.0*sin(2*pi*t/5)/pi - 5.0*sin(4*pi*t/5)/pi - 3.33333333333333*sin(6*pi*t/5)/pi -\
-      2.5*sin(8*pi*t/5)/pi + 5.0 # + ruido
+# Copiar a Série de Fourier implementada no sript --> Fourier_01
 
+S = (-1.85185185185185*cos(6.0*pi)/pi**3 - 5.55555555555556*sin(pi/1125899906842624)/pi**2 +\
+     1.85185185185185/pi**3)*sin(0.6*pi*t) - 100.0*cos(0.2*pi*t)/pi**2 - 25.0*cos(0.4*pi*t)/pi**2 +\
+    (-5.55555555555556/pi**2 - 5.55555555555556*cos(6.0*pi)/pi**2 +\
+     1.85185185185185*sin(pi/1125899906842624)/pi**3)*cos(0.6*pi*t) + 16.6666666666667 + ruido
 
 print('S(n) é a representação do Spectro do Sinal no n-ésimo Harmômico')
+print('')
+print('Figuras 01 e 02 --> Representação Gráfica do Sinal')
 print('')
 
 # Representação Gráfica do Sinal
 
-plt.plot(t, S, '-b', label='Série de Fourier', linewidth = 2.0)
+plt.plot(t, S, '-b', label='Série de Fourier + Ruído', linewidth = 2.0)
 plt.plot(t, f(t), '-r', label='Função Geradora', linewidth = 2.0)
 plt.xlabel('Tempo')
 plt.ylabel('Espectro do Sinal')
-plt.title('Representação da série de Fourier')
+plt.title('Representação da Série de Fourier')
 plt.legend(loc=4) 
 plt.grid(True)
 plt.show() 
@@ -110,7 +103,7 @@ cmap = cm.jet
 fig = plt.figure()
 fig.clf()
 ax = fig.add_subplot(1, 1, 1)
-ax.scatter(t, S, c=S,s=10, label ='Série de Fourier', cmap=cmap, linewidth = 2.0)
+ax.scatter(t, S, c = S,s = 10, label ='Série de Fourier + Rúido', cmap=cmap, linewidth = 2.0)
 plt.plot(t, f(t), '-k', label='Função Geradora', linewidth = 2.0)
 plt.xlabel('Tempo')
 plt.ylabel('Espectro do Sinal')
@@ -123,4 +116,4 @@ plt.show()
 
 
 print(' ')
-print(' ===== Fim do Programa Fourier_02 ====')
+print(' =========== Fim do Programa Fourier_02 ==========')
